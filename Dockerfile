@@ -32,7 +32,7 @@ RUN set -ex \
 # && make install
 # && ldconfig
  && pip3 install -r /tmp/requirements_all.txt \
- && pip3 install homeassistant 
+ && pip3 install homeassistant \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* ~/.cache
 
