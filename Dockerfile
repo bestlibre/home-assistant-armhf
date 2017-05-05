@@ -56,4 +56,4 @@ ENTRYPOINT ["/tini", "--"]
 
 VOLUME /config
 
-CMD ["/usr/bin/hass -c /config"]
+CMD ["/usr/local/bin/hass -c /config"]
