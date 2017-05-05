@@ -44,6 +44,8 @@ RUN set -ex \
 ENV TINI_VERSION v0.14.0
 ADD https://github.com/krallin/tini/releases/download/${TINI_VERSION}/tini-armhf /tini
 RUN chmod +x /tini
+
+RUN useradd -ms /bin/bash hass
 RUN [ "cross-build-end" ]
 # Run as mopidy user
 USER hass
